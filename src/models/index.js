@@ -6,25 +6,25 @@
 import { getAlumnos, addAlumno, getProfesores, addProfesor, getAsignaturas, addAsignatura } from './data.js'
 
 function getAlumnoById(idAlumno) {
-    // TODO
+    return getAlumnos().find(alumno => alumno.id === idAlumno);
 }
 
 function getProfesorById(idProfesor) {
-    // TODO
+    return getProfesores().find(profesor => profesor.id === idProfesor);
 }
 
 function getAsignaturaById(idAsignatura) {
-    // TODO
+    return getAsignaturas().find(asignatura => asignatura.id === idAsignatura);
 }
 
 // Asignaturas que imparte un profesor
 function getAsignaturasByProfesorId(idProfesor) {
-    // TODO
+    return getAsignaturas().filter(asignatura => asignatura.profesorId === idProfesor);
 }
 
 // Asignaturas en las que está matriculado un alumno
 function getAsignaturasByAlumnoId(idAlumno) {
-    // TODO
+    return getAsignaturas().filter(asignatura => asignatura.alumnos.includes(idAlumno));
 }
 
 export default {

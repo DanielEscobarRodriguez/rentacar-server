@@ -10,7 +10,8 @@ export function getAlumnos() {
 }
 
 export function addAlumno(alumno) {
-    // TODO
+    data.alumnos.push(alumno);
+    return alumno;
 }
 
 export function getProfesores() {
@@ -18,7 +19,8 @@ export function getProfesores() {
 }
 
 export function addProfesor(profesor) {
-    // TODO
+    data.alumnos.push(alumno);
+    return alumno;
 }
 
 export function getAsignaturas() {
@@ -26,5 +28,6 @@ export function getAsignaturas() {
 }
 
 export function addAsignatura(asignatura) {
-    // TODO
+    data.asignaturas.push(asignatura);
+    return asignatura;
 }
